@@ -1,28 +1,58 @@
 import java.util.Scanner;
+import java.IO.IOException;
+import java.util.ArrayList;
 
-/**
- * The ValorantAgents class allows the user to enter the name of a
- * VALORANT agent and displays that agent's official Riot biography.
- *
- * @author 
- * @version 1.0
- */
 public class ValorantAgents {
 
-    /**
-     * The main method asks the user to enter the name of a VALORANT agent.
-     * It then checks the name and displays the corresponding biography.
-     *
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
+    static class Agent {
+        private static ArrayList<Agent> list = new ArrayList<Agent>();
+        private String Name;
+        private String Bio;
 
+        public Agent(String Name, String Bio) {
+            this.Name = Name;
+            this.Bio = Bio;
+            list.add(this);
+        }
+
+        public String getBio() {
+            return Bio;
+        }
+
+        public String findBio(String name) {
+            for (int i = 0; i < list.size(); i++) {
+                if (name.equalsIgnorCase(list.get(i))) {
+                    return list.get(i).getBio();
+                }
+            }
+            return "Agent not found.";
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
+        new Agent("Astra", "");
         // Create a Scanner to read input from the user.
         Scanner scanner = new Scanner(System.in);
 
         // Ask the user to enter the name of a VALORANT agent.
         System.out.println("Enter a VALORANT agent:");
         String agent = scanner.nextLine().trim();
+
+        System.out.println(Agent.findBio(agent));
+
+        
 
         // Check the entered agent name and print that agent's official Riot biography.
         if (agent.equalsIgnoreCase("Astra")) {
