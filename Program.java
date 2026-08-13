@@ -17,6 +17,15 @@ public class ValorantAgents {
             this.Bio = Bio;
             list.add(this);
         }
+        
+        /**
+         * Returns the name of the agent
+         * 
+         * @return the agent's name
+         */
+        public String getName() {
+            return Name;
+        }
 
         /**
          * Returns the biography of the agent.
@@ -35,14 +44,14 @@ public class ValorantAgents {
          */
         public static String findBio(String name) {
             for (int i = 0; i < list.size(); i++) {
-                if (name.equalsIgnorCase(list.get(i))) {
+                if (name.equalsIgnoreCase(list.get(i).getName())) {
                     return list.get(i).getBio();
                 }
             }
             return "Agent not found.";
         }
     }
-}
+    
     public static void main(String[] args) throws IOException {
         new Agent("Astra", "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.");
         new Agent("Breach", "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.");
