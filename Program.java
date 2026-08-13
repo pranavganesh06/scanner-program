@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class ValorantAgents {
 
+    /**
+     * Represents a Valorant agent and stores information about all created agents.
+     */
     static class Agent {
         private static ArrayList<Agent> list = new ArrayList<Agent>();
         private String Name;
@@ -15,11 +18,22 @@ public class ValorantAgents {
             list.add(this);
         }
 
+        /**
+         * Returns the biography of the agent.
+         *
+         * @return the agent's biography
+         */
         public String getBio() {
             return Bio;
         }
 
-        public String findBio(String name) {
+        /**
+         * Searches for an agent by name and returns their biography.
+         *
+         * @param name the name of the agent to search for
+         * @return the agent's biography, or "Agent not found." if no matching agent exists
+         */
+        public static String findBio(String name) {
             for (int i = 0; i < list.size(); i++) {
                 if (name.equalsIgnorCase(list.get(i))) {
                     return list.get(i).getBio();
@@ -28,7 +42,7 @@ public class ValorantAgents {
             return "Agent not found.";
         }
     }
-
+}
     public static void main(String[] args) throws IOException {
 
         new Agent("Astra", "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.");
