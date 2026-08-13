@@ -31,18 +31,35 @@ public class ValorantAgents {
 
     public static void main(String[] args) throws IOException {
 
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
-        new Agent("Astra", "");
+        new Agent("Astra", "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.");
+        new Agent("Breach", "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.");
+        new Agent("Brimstone", "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.");
+        new Agent("Chamber", "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.");
+        new Agent("Clove", "Scottish troublemaker Clove makes mischief for enemies in both the heat of battle and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to living only ever a moment away.");
+        new Agent("Cypher", "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.");
+        new Agent("Deadlock", "");
+        new Agent("Fade", "");
+        new Agent("Gekko", "");
+        new Agent("Harbor", "");
+        new Agent("Iso", "");
+        new Agent("Jett", "");
+        new Agent("KAY/O", "");
+        new Agent("Killjoy", "");
+        new Agent("Miks", "");
+        new Agent("Neon", "");
+        new Agent("Omen", "");
+        new Agent("Phoenix", "");
+        new Agent("Raze", "");
+        new Agent("Reyna", "");
+        new Agent("Sage", "");
+        new Agent("Skye", "");
+        new Agent("Sova", "");
+        new Agent("Tejo", "");
+        new Agent("Veto", "");
+        new Agent("Viper", "");
+        new Agent("Vyse", "");
+        new Agent("Waylay", "");
+        new Agent("Yoru", "");
         // Create a Scanner to read input from the user.
         Scanner scanner = new Scanner(System.in);
 
@@ -56,22 +73,22 @@ public class ValorantAgents {
 
         // Check the entered agent name and print that agent's official Riot biography.
         if (agent.equalsIgnoreCase("Astra")) {
-            System.out.println("Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.");
+            System.out.println();
 
         } else if (agent.equalsIgnoreCase("Breach")) {
-            System.out.println("Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.");
+            System.out.println("");
 
         } else if (agent.equalsIgnoreCase("Brimstone")) {
-            System.out.println("Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.");
+            System.out.println("");
 
         } else if (agent.equalsIgnoreCase("Chamber")) {
-            System.out.println("Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.");
+            System.out.println("");
 
         } else if (agent.equalsIgnoreCase("Clove")) {
-            System.out.println("Scottish troublemaker Clove makes mischief for enemies in both the heat of battle and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to living only ever a moment away.");
+            System.out.println("");
 
         } else if (agent.equalsIgnoreCase("Cypher")) {
-            System.out.println("The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.");
+            System.out.println("");
 
         } else if (agent.equalsIgnoreCase("Deadlock")) {
             System.out.println("Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.");
