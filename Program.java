@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.IO.IOException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ValorantAgents {
